@@ -30,6 +30,7 @@ class AppTexts {
       'Qeydiyyatdan Keçdiyiniz e-poçt və şifrə ilə daxil olun';
   static String bioText =
       '"Şəxsi məlumatlarınızı daxil edərək insanların sizi daha yaxından tanımağına vəsilə ol!!!"';
+  static String emptyBio= "qeyd olunmayıb";
   static String next = 'Növbəti';
   static String story = 'Status';
   static String goLogin = 'Daxil ol ';

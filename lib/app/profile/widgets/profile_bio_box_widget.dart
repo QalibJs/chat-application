@@ -37,16 +37,18 @@ class ProfileBioBoxWidget extends StatelessWidget {
                 if (state is HomeSuccessState) {
                   final bios = state.usersModel;
                   return ListView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: 1,
                     itemBuilder: (context, index) {
-                      final data = bios[index];
-                      return Padding(
-                        padding: AppPaddings.all6,
-                        child: Text(
-                          auth.currentUser!.uid == data.uid ? data.uid! : "",
-                          style: AppTextStyle.whiteMiddleText(
-                            exColor(context),
-                          ),
+                      final currentUserBio = bios
+                          .firstWhere(
+                            (user) => user.uid == auth.currentUser!.uid,
+                          )
+                          .bio;
+                      return Text(
+                        currentUserBio ?? AppTexts.emptyBio,
+                        style: AppTextStyle.whiteMiddleText(
+                          exColor(context),
                         ),
                       );
                     },

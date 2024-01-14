@@ -1,11 +1,9 @@
+import 'package:chat_app/app/home/widgets/home_top_icon_widget.dart';
 import 'package:chat_app/extension/context_extension.dart';
 import '../../../constants/app_colors.dart';
 import '../../../constants/app_texts.dart';
 import '../../../global/widgets/global_input_widget.dart';
-import '../../../controllers/provider/home/home_provider.dart';
-import '../../../theme/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
 class HomeSearchBar extends StatelessWidget {
@@ -13,7 +11,6 @@ class HomeSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    HomeProvider homeProvider = context.watch<HomeProvider>();
     return SizedBox(
       width: context.width,
       child: Row(
@@ -26,7 +23,7 @@ class HomeSearchBar extends StatelessWidget {
             child: GlobalInputWidget(
               isHome: true,
               onChanged: (query) {
-                homeProvider.searchDatas(query);
+                // homeCubit.searchDatas(query);
               },
               isPassword: false,
               hintText: AppTexts.search,
@@ -36,15 +33,7 @@ class HomeSearchBar extends StatelessWidget {
           ),
            SizedBox(
             width: 10.w,
-            child: IconButton(
-              onPressed: () {
-                homeProvider.changeAppBar();
-              },
-              icon: Icon(
-                Icons.close,
-                color: exColor(context),
-              ),
-            ),
+            child: const HomeTopIconWidget()
           )
         ],
       ),

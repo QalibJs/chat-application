@@ -5,12 +5,7 @@ class HomeProvider with ChangeNotifier {
   //searcing datas from firebase
   List<String> foundList = [];
 
-  bool sellectedSearchBar = false;
 
-  void changeAppBar() {
-    sellectedSearchBar = !sellectedSearchBar;
-    notifyListeners();
-  }
 
   void searchDatas(String query) async {
     final result = await FirebaseFirestore.instance

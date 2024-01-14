@@ -21,7 +21,7 @@ class AppTextStyle {
         fontWeight: FontWeight.w500,
       );
   static buttonTextStyle(context) => TextStyle(
-        color: Theme.of(context).colorScheme.background,
+        color: exColor(context),
         fontSize: 11.5.sp,
         fontWeight: FontWeight.w500,
       );

@@ -12,7 +12,7 @@ class SplashBottomText extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Text(
-            "Made in by Qalib",
+            "Qalib",
             style: AppTextStyle.whiteSoSmallText,
           ),
         ],

@@ -1,10 +1,9 @@
+import 'package:chat_app/app/main/screen/main_page.dart';
+import 'package:chat_app/app/splash/widgets/splash_bacground.dart';
+import 'package:chat_app/constants/app_navigators.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/app_colors.dart';
-import '../../../constants/app_navigators.dart';
-import '../../main/screen/main_page.dart';
-import '../widgets/splash_animated_text.dart';
-import '../widgets/splash_bottom_text.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -26,13 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.black,
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SplashAnimatedTextWidget(),
-          SplashBottomText(),
-        ],
-      ),
+      body: const SplashBackground()
     );
   }
 }

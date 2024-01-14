@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   AppColors._();
+  static get splashPink => const Color.fromARGB(255, 242, 186, 251);
+  static get splashBlue => const Color.fromARGB(255, 27, 24, 176);
   static get blue => Colors.blue;
   static get purple => Colors.purple;
   static get hardGrey => const Color.fromARGB(255, 63, 63, 63);

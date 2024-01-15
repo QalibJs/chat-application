@@ -4,8 +4,6 @@ class AppTexts {
   static String search = 'Axtar...';
   static String appName = 'Mandalin Chat';
   static String about = 'Haqqında';
-
-
   static String homeError =
       "Nəsə problem baş verdi. Zəhmət olmasa hesaba yenidən daxil olun";
   static String messages = 'Mesajlar';

@@ -15,6 +15,11 @@ class AppTextStyle {
         fontSize: 12.5.sp,
         fontWeight: FontWeight.w500,
       );
+  static appBar(BuildContext context) => TextStyle(
+        color: exColor(context),
+        fontSize: 15.sp,
+        fontWeight: FontWeight.w500,
+      );
   static profile(color) => TextStyle(
         color: color,
         fontSize: 12.5.sp,
@@ -125,5 +130,4 @@ class AppTextStyle {
         fontSize: 12.5.sp,
         fontWeight: FontWeight.w600,
       );
-      
 }

@@ -4,12 +4,15 @@ import 'package:chat_app/constants/app_paddings.dart';
 import 'package:chat_app/constants/app_text_styles.dart';
 import 'package:chat_app/extension/context_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
-class ProfileListTile extends StatelessWidget {
+class SettingsListTile extends StatelessWidget {
   final String account;
-  const ProfileListTile({
+  final int index;
+  const SettingsListTile({
     super.key,
     required this.account,
+    required this.index,
   });
 
   @override
@@ -22,10 +25,22 @@ class ProfileListTile extends StatelessWidget {
         Container(
           margin: AppPaddings.all12,
           width: context.width,
-          height: 50,
+          height: 7.h,
           decoration: AppBoxDecorations.br12(
             AppColors.grey,
           ),
+          child: index == 0
+              ? Padding(
+                padding: AppPaddings.all4,
+                child:  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Username", style: AppTextStyle.blackBigText,)
+                    ],
+                  ),
+              )
+              : const SizedBox.shrink(),
         ),
       ],
     );

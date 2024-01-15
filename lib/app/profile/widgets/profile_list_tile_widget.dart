@@ -7,10 +7,10 @@ import '../../../constants/app_paddings.dart';
 import '../../../constants/app_sized_box.dart';
 import '../../../constants/app_text_styles.dart';
 
-class SettingsListTileWidget extends StatelessWidget {
+class ProfileListTileWidget extends StatelessWidget {
   final String text;
   final IconData icon;
-  const SettingsListTileWidget({
+  const ProfileListTileWidget({
     super.key,
     required this.text,
     required this.icon,

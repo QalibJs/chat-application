@@ -1,5 +1,5 @@
-import 'package:chat_app/app/profile/widgets/profile_bio_box_widget.dart';
-import 'package:chat_app/app/profile/widgets/profile_list_view.dart';
+import '../widgets/profile_bio_box_widget.dart';
+import '../widgets/profile_list_view_widget.dart';
 import '../widgets/profile_edit_icon.dart';
 import '../../../theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,8 @@ class ProfileScreen extends StatelessWidget {
           ProfileTopWidget(isProfile: true),
           // Spacer(),
           ProfileBioBoxWidget(),
-          ProfileListView(),
+          // ProfileListView(),
+          ProfileListViewWidget()
         ],
       ),
     );

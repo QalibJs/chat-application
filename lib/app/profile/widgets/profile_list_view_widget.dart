@@ -13,10 +13,10 @@ import '../../../data/model/settings/settings_model.dart';
 import '../../../global/widgets/global_reset_password.dart';
 import '../../../global/widgets/global_snackbar.dart';
 import '../../../helper/helper.dart';
-import 'settings_list_tile_widget.dart';
+import 'profile_list_tile_widget.dart';
 
-class SettingsListViewWidget extends StatelessWidget {
-  const SettingsListViewWidget({super.key});
+class ProfileListViewWidget extends StatelessWidget {
+  const ProfileListViewWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class SettingsListViewWidget extends StatelessWidget {
                       onboardCubit,
                     );
                   },
-                  child: SettingsListTileWidget(
+                  child: ProfileListTileWidget(
                     icon: datas.icon,
                     text: datas.text,
                   ),

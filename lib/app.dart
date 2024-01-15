@@ -1,7 +1,7 @@
 import 'package:chat_app/app/login/screen/login_screen.dart';
 import 'package:chat_app/app/onboard/screen/onboard_screen.dart';
+import 'package:chat_app/app/splash/screen/splash_screen.dart';
 import 'package:chat_app/controllers/cubit/home/home_search_bar_cubit.dart';
-
 import 'controllers/cubit/delete_acc/delete_cubit.dart';
 import 'controllers/cubit/home/home_top_cubit.dart';
 import 'controllers/cubit/offer/offer_cubit.dart';
@@ -10,7 +10,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
-import 'app/splash/screen/splash_screen.dart';
 import 'controllers/cubit/auth/auth_cubit.dart';
 import 'controllers/cubit/chat/chat_cubit.dart';
 import 'controllers/cubit/edit/edit_cubit.dart';
@@ -61,10 +60,10 @@ class MyApp extends StatelessWidget {
                     : onboard == 1
                         ? const LoginScreen()
                         : const OnboardScreen(),
+
           );
         },
       ),
     );
   }
 }
-

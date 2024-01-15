@@ -29,7 +29,7 @@ class HomeStoryListTileWidget extends StatelessWidget {
       child: Padding(
         padding: AppPaddings.all4.copyWith(left: 12, right: 12),
         child: Column(
-          children: [
+          children: <Widget>[
             Container(
               width: 65,
               height: 65,

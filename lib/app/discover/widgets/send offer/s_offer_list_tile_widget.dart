@@ -19,7 +19,7 @@ class SendOfferListTile extends StatelessWidget {
     return Padding(
       padding: AppPaddings.lr12,
       child: Column(
-        children: [
+        children: <Widget>[
           SendOfferListTileItemWidget(
               title: username, subTitle: "${AppTexts.username} :"),
           SendOfferListTileItemWidget(

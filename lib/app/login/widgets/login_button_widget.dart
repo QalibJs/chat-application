@@ -17,7 +17,7 @@ class LoginButtonWidget extends StatelessWidget {
     AuthCubit authCubit = context.read<AuthCubit>();
     DeleteCubit deleteCubit = context.read<DeleteCubit>();
     return Column(
-      children: [
+      children: <Widget>[
         GlobalButtonWidget(
           text: AppTexts.login,
           color: exColor(context),

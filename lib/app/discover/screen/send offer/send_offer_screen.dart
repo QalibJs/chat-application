@@ -27,7 +27,7 @@ class SendOfferScreen extends StatelessWidget {
         title: Text(AppTexts.userinfo),
       ),
       body: Column(
-        children: [
+        children: <Widget>[
           SendOfferTopWidget(
             username: username,
             email: email,

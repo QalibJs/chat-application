@@ -7,10 +7,10 @@ import '../../../constants/app_paddings.dart';
 import '../../../constants/app_sized_box.dart';
 import '../../../constants/app_text_styles.dart';
 
-class ProfileListTileWidget extends StatelessWidget {
+class SettingsListTileWidget extends StatelessWidget {
   final String text;
   final IconData icon;
-  const ProfileListTileWidget({
+  const SettingsListTileWidget({
     super.key,
     required this.text,
     required this.icon,
@@ -25,7 +25,7 @@ class ProfileListTileWidget extends StatelessWidget {
       decoration:
           AppBoxDecorations.xBr(Theme.of(context).colorScheme.background),
       child: Row(
-        children: [
+        children: <Widget>[
           Padding(
             padding: AppPaddings.lr12,
             child: Icon(

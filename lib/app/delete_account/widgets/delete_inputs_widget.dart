@@ -18,7 +18,7 @@ class DeleteInputsWidget extends StatelessWidget {
       child: Padding(
         padding: AppPaddings.all12,
         child: Column(
-          children: [
+          children: <Widget>[
             GlobalInputWidget(
               validator: (value) {
                 if (value!.isEmpty) {

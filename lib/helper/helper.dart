@@ -75,7 +75,7 @@ class Helper {
               AppSizedBox.h15,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: <Widget>[
                   SizedBox(
                     width: 10.h,
                     height: 5.h,
@@ -120,7 +120,7 @@ class Helper {
               AppSizedBox.h15,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children:<Widget> [
                   SizedBox(
                     width: 10.h,
                     height: 5.h,

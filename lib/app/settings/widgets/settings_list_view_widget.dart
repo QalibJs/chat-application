@@ -9,18 +9,18 @@ import '../../../constants/app_sized_box.dart';
 import '../../../controllers/cubit/auth/auth_cubit.dart';
 import '../../../controllers/cubit/onboard/onboard_cubit.dart';
 import '../../../controllers/cubit/profile/profile_cubit.dart';
-import '../../../data/model/profile/profile_model.dart';
+import '../../../data/model/settings/settings_model.dart';
 import '../../../global/widgets/global_reset_password.dart';
 import '../../../global/widgets/global_snackbar.dart';
 import '../../../helper/helper.dart';
-import 'profile_list_tile_widget.dart';
+import 'settings_list_tile_widget.dart';
 
-class ProfileListViewWidget extends StatelessWidget {
-  const ProfileListViewWidget({super.key});
+class SettingsListViewWidget extends StatelessWidget {
+  const SettingsListViewWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    List<ProfileModel> settingsModel = ProfileModel.settingsModel;
+    List<SettingsModel> settingsModel = SettingsModel.settingsModel;
     ProfileCubit profileCubit = context.read<ProfileCubit>();
     OnboardCubit onboardCubit = context.read<OnboardCubit>();
     AuthCubit authCubit = context.read<AuthCubit>();
@@ -49,7 +49,7 @@ class ProfileListViewWidget extends StatelessWidget {
                       onboardCubit,
                     );
                   },
-                  child: ProfileListTileWidget(
+                  child: SettingsListTileWidget(
                     icon: datas.icon,
                     text: datas.text,
                   ),

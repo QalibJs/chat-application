@@ -12,7 +12,7 @@ class RegisterTopWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Container(
           width: 7.h,
           height: 7.h,

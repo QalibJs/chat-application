@@ -12,7 +12,7 @@ class GroupFloatButton extends StatelessWidget {
       padding: AppPaddings.all6,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: [
+        children: <Widget>[
           Container(
             decoration: AppBoxDecorations.gradBox(),
             child: FloatingActionButton(

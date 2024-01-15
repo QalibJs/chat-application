@@ -26,7 +26,7 @@ class ChatInputWidget extends StatelessWidget {
           ? AppColors.black7
           : AppColors.white,
       child: Row(
-        children: [
+        children:<Widget> [
           Container(
             margin: AppPaddings.lr12.copyWith(bottom: 16, right: 0),
             width: context.width - 110,

@@ -27,7 +27,7 @@ class DiscoverListTileWidget extends StatelessWidget {
         height: 9.h,
         margin: AppPaddings.lr12,
         child: Row(
-          children: [
+          children:<Widget> [
             Container(
               decoration: AppBoxDecorations.br50(AppColors.grey),
               width: 6.2.h,
@@ -38,7 +38,7 @@ class DiscoverListTileWidget extends StatelessWidget {
               padding: AppPaddings.all18.copyWith(left: 0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: <Widget> [
                   Text(
                     name,
                     style: AppTextStyle.chatPrimaryText(context),

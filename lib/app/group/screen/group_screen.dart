@@ -11,7 +11,7 @@ class GroupScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: [
+        children: <Widget>[
           const GroupFloatButton(),
           AppSizedBox.h100,
         ],

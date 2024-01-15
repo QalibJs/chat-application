@@ -18,10 +18,10 @@ class DeleteTopWidget extends StatelessWidget {
           height: 48.h,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: <Widget>[
                   Blur(
                     blur: 5,
                     child: Container(
@@ -45,7 +45,7 @@ class DeleteTopWidget extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children:<Widget> [
                   Blur(
                     blur: 5,
                     child: Container(
@@ -65,7 +65,7 @@ class DeleteTopWidget extends StatelessWidget {
           ),
         ),
         Column(
-          children: [
+          children: <Widget> [
             Container(
               width: 130,
               height: 130,

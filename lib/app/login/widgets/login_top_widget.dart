@@ -44,7 +44,7 @@ class LoginTopWidget extends StatelessWidget {
               children: [
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children:<Widget> [
                     Text(
                       loginCubit.currentIndex == 0
                           ? AppTexts.signInTop
@@ -56,7 +56,7 @@ class LoginTopWidget extends StatelessWidget {
                 AppSizedBox.h10,
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: <Widget>[
                     Text(
                       loginCubit.currentIndex == 0
                           ? AppTexts.signInTopB

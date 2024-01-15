@@ -17,7 +17,7 @@ class ProfileTopWidget extends StatelessWidget {
         child: Padding(
           padding: AppPaddings.all12,
           child: Column(
-            children: [
+            children: <Widget>[
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,

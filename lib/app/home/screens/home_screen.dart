@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
         toolbarHeight: 10.h,
       ),
       body: Column(
-        children: [
+        children: <Widget>[
           const HomeHeaderWidget(),
           Expanded(
             child: PageView(

@@ -29,7 +29,7 @@ class GlobalResetPassword {
               children: [
                 isLogin
                     ? Column(
-                        children: [
+                        children: <Widget> [
                           Container(
                             // width: context.widthh,
                             margin: AppPaddings.all12,
@@ -53,7 +53,7 @@ class GlobalResetPassword {
                       )
                     : Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children:<Widget> [
                           Text(
                             "${auth.currentUser!.email}",
                             style: AppTextStyle.blackHardText(context),

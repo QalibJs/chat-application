@@ -15,7 +15,7 @@ class HomeAppBarWidget extends StatelessWidget {
     return homeCubit.isSellectedSearchBar  
         ? const HomeSearchBar()
         : Row(
-            children: [
+            children: <Widget>[
               Text(AppTexts.appName),
               const Spacer(),
               const HomeTopIconWidget()

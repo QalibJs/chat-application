@@ -14,7 +14,7 @@ class HomeSearchBar extends StatelessWidget {
     return SizedBox(
       width: context.width,
       child: Row(
-        children: [
+        children: <Widget>[
           Container(
             alignment: Alignment.center,
             height: 50,

@@ -17,7 +17,7 @@ class ChatSnapshotHasDataWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
-        children: [
+        children: <Widget>[
           Expanded(
             child: Container(
               color: Theme.of(context).colorScheme.background == AppColors.black

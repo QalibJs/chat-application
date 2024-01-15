@@ -21,7 +21,7 @@ class ProfileBioBoxWidget extends StatelessWidget {
       child: Column(
         children: [
           Row(
-            children: [
+            children: <Widget>[
               Text(
                 AppTexts.about,
                 style: AppTextStyle.chatHeaderText(context),

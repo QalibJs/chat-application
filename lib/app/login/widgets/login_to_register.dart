@@ -29,7 +29,7 @@ class LoginToRegister extends StatelessWidget {
         itemBuilder: (context, index) {
           final texts = text[index];
           return Row(
-            children: [
+            children: <Widget>[
               Padding(
                 padding: AppPaddings.lr18.copyWith(
                   right: 0,

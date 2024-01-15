@@ -19,7 +19,7 @@ class EditScreen extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
       body: const Column(
-        children: [
+        children: <Widget>[
           EditProfilePhotoWidget(),
           EditInputsWidget(),
           EditButtonWidget(isRegister: false,)

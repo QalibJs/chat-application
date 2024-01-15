@@ -16,7 +16,7 @@ class DiscoverScreen extends StatelessWidget {
         title: const HomeAppBarWidget(),
       ),
       body: const Column(
-        children: [
+        children: <Widget>[
           DiscoverBlocBuilderWidget(),
         ],
       ),

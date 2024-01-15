@@ -18,7 +18,7 @@ class RegisterButtonWidget extends StatelessWidget {
     LoginCubit loginCubit = context.watch<LoginCubit>();
 
     return Column(
-      children: [
+      children: <Widget>[
         BlocBuilder<HomeCubit, HomeState>(
           builder: (context, state) {
             if (state is HomeSuccessState) {

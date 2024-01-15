@@ -15,7 +15,7 @@ class OfferBlocBuilderWidget extends StatelessWidget {
     OfferService offerService = OfferService();
     FirebaseAuth auth = FirebaseAuth.instance;
     return Column(
-      children: [
+      children: <Widget>[
         BlocBuilder<HomeCubit, HomeState>(
           builder: (context, state) {
             if (state is HomeSuccessState) {

@@ -17,7 +17,7 @@ class DeleteCenterWidget extends StatelessWidget {
       alignment: Alignment.centerLeft,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget> [
           Text(
             AppTexts.deleteAccount,
             style: AppTextStyle.blackBigText,

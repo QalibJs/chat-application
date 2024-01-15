@@ -15,7 +15,7 @@ class EditProfilePhotoWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
+      children: <Widget>[
         Stack(
           alignment: AlignmentDirectional.bottomEnd,
           children: [

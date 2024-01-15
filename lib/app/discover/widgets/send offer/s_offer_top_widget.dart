@@ -21,7 +21,7 @@ class SendOfferTopWidget extends StatelessWidget {
         child: Padding(
           padding: AppPaddings.all12,
           child: Column(
-            children: [
+            children: <Widget>[
                SendOfferProfilePhotoWidget(username: username,email: email,),
               AppSizedBox.h10,
               const SendOfferButtonWidget(),

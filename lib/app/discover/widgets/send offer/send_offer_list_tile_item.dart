@@ -25,7 +25,7 @@ class SendOfferListTileItemWidget extends StatelessWidget {
         padding: AppPaddings.bottom10,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
+          children:<Widget> [
             Text(
               subTitle,
               style: AppTextStyle.blackHardText(context),

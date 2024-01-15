@@ -19,7 +19,7 @@ class OnboardPageTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Container(
           width: context.width,
           height: 62.h,

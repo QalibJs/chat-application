@@ -18,7 +18,7 @@ class OnboardSkipButtonWidget extends StatelessWidget {
     OnboardCubit onboardCubit = context.read<OnboardCubit>();
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
-      children: [
+      children: <Widget>[
         GestureDetector(
           onTap: () {
             AppNavigator.goDelete(context,const LoginScreen());

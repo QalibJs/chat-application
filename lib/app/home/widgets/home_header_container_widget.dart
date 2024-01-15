@@ -21,7 +21,7 @@ class HomeHeaderContainerWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: <Widget>[
         Expanded(
           child: GestureDetector(
             onTap: () {

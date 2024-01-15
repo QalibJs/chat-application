@@ -16,7 +16,7 @@ class EditInputsWidget extends StatelessWidget {
     return Padding(
       padding: AppPaddings.all6,
       child: Column(
-        children: [
+        children: <Widget> [
           AppSizedBox.h30,
           InputsForEdit(
             controller: authCubit.bioController,

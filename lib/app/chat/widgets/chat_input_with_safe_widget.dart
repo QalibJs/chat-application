@@ -10,7 +10,7 @@ class ChatInputWithSafeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Container(
           decoration: BoxDecoration(
             color: AppColors.white,
@@ -20,7 +20,7 @@ class ChatInputWithSafeWidget extends StatelessWidget {
           ),
           height: 100.5,
           child: Column(
-            children: [
+            children:<Widget> [
               ChatInputWidget(
                 index: index,
               ),

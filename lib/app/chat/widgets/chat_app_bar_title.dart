@@ -13,7 +13,7 @@ class ChatAppBarTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
+      children: <Widget>[
         Container(
           decoration: AppBoxDecorations.br50(AppColors.grey),
           width: 6.2.h,
@@ -23,7 +23,7 @@ class ChatAppBarTitle extends StatelessWidget {
         AppSizedBox.w20,
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: <Widget>[
             Text(
               name,
               style: AppTextStyle.chatHeaderText(context),

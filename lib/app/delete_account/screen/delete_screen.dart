@@ -15,7 +15,7 @@ class DeleteScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.background,
       body: const SingleChildScrollView(
         child: Column(
-          children: [
+          children: <Widget>[
             DeleteTopWidget(),
             DeleteCenterWidget(),
             DeleteInputsWidget(),

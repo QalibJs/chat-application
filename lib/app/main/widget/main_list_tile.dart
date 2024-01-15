@@ -19,7 +19,7 @@ class MainTopListTile extends StatelessWidget {
     MainCubit mainCubit = context.read<MainCubit>();
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
+      children: <Widget>[
         GestureDetector(
           onTap: () {
             mainCubit.controller.jumpToPage(index);

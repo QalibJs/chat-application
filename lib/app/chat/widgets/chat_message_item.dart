@@ -37,7 +37,7 @@ class ChatMessageItemWidget extends StatelessWidget {
 
     return Row(
       mainAxisAlignment: mainAxis,
-      children: [
+      children: <Widget>[
         Container(
           width: data['message'].length >= 29 ? 62.w : null,
           padding: AppPaddings.all4,

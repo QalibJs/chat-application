@@ -39,6 +39,7 @@ class AppTexts {
   static String you = 'Siz';
   static String begin = 'Başla';
   static String alrdAccount = 'Hesabınız var?';
+  static String account = 'Hesab';
   static String notFound = 'qeyd olunmayıb';
   static String updates = "Son yeniləmələr";
   static String update = "Yenilə";

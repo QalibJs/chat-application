@@ -30,7 +30,7 @@ class LoginResetPassword extends StatelessWidget {
             padding: AppPaddings.lr16,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+              children: <Widget>[
                 Text(
                   AppTexts.resetPassword,
                   style: AppTextStyle.bluekHardText,

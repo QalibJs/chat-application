@@ -14,7 +14,7 @@ class HomeTopWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget>[
           Text(
             AppTexts.updates,
             style: AppTextStyle.bluekHardText,

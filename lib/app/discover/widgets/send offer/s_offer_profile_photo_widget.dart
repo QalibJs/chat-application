@@ -14,7 +14,7 @@ class SendOfferProfilePhotoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
-      children: [
+      children: <Widget>[
         Container(
           width: 9.h,
           height: 9.h,
@@ -25,7 +25,7 @@ class SendOfferProfilePhotoWidget extends StatelessWidget {
         AppSizedBox.w20,
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: <Widget> [
             Text(
               username,
               style: AppTextStyle.whiteMiddleText(exColor(context)),

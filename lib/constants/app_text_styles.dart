@@ -26,7 +26,7 @@ class AppTextStyle {
         fontWeight: FontWeight.w500,
       );
   static buttonTextStyle(context) => TextStyle(
-        color: exColor(context),
+        color: Theme.of(context).colorScheme.background,
         fontSize: 11.5.sp,
         fontWeight: FontWeight.w500,
       );
@@ -42,8 +42,10 @@ class AppTextStyle {
         fontWeight: FontWeight.w600,
       );
 
-  static get hardGreySmallText => TextStyle(
-        color: AppColors.hardGrey,
+  static hardGreySmallText(BuildContext context) => TextStyle(
+        color: Theme.of(context).colorScheme.background == AppColors.black
+            ? exColor(context)
+            : AppColors.hardGrey,
         fontSize: 12.sp,
         fontWeight: FontWeight.w600,
       );

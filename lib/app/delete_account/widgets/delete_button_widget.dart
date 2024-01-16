@@ -1,5 +1,6 @@
+import 'package:chat_app/theme/theme.dart';
+
 import '../../login/screen/login_screen.dart';
-import '../../../constants/app_colors.dart';
 import '../../../constants/app_navigators.dart';
 import '../../../constants/app_paddings.dart';
 import '../../../constants/app_texts.dart';
@@ -25,10 +26,12 @@ class DeleteButtonWidget extends StatelessWidget {
       padding: AppPaddings.all12,
       child: GlobalButtonWidget(
         onPressed: () {
-          loginCheckoOut(deleteCubit, context, homeCubit);
+          if (deleteCubit.deleteKey.currentState!.validate()) {
+            loginCheckoOut(deleteCubit, context, homeCubit);
+          }
         },
         text: AppTexts.deleteAccount,
-        color: AppColors.black,
+        color: exColor(context),
       ),
     );
   }
@@ -38,7 +41,6 @@ Future deleteAcc(
   deleteCubit,
   context,
 ) async {
-  if (deleteCubit.deleteKey.currentState!.validate()) {
     Helper.deleteAccountFromAutH();
     Helper.deleteAccountFromDb();
     AppNavigator.goDelete(
@@ -49,7 +51,6 @@ Future deleteAcc(
       context,
       AppTexts.success,
     );
-  }
 }
 
 Future loginCheckoOut(deleteCubit, context, homeCubit) async {
@@ -58,9 +59,7 @@ Future loginCheckoOut(deleteCubit, context, homeCubit) async {
       deleteCubit.mailController.text.trim().toLowerCase(),
       deleteCubit.passwordController.text.trim().toLowerCase(),
     );
-
     deleteCubit.loginCheck();
-
     HiveService hiveService = await HiveService.instance;
     int checkLogin = hiveService.getData("checkingLogin");
     if (checkLogin == 1) {

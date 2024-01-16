@@ -25,7 +25,7 @@ class DeleteCenterWidget extends StatelessWidget {
           AppSizedBox.h10,
           Text(
             AppTexts.infoDeletingAcc,
-            style: AppTextStyle.hardGreySmallText,
+            style: AppTextStyle.hardGreySmallText(context),
           )
         ],
       ),

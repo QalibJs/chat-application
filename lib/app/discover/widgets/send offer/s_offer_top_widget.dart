@@ -9,7 +9,15 @@ import 'package:flutter/material.dart';
 class SendOfferTopWidget extends StatelessWidget {
   final String username;
   final String email;
-  const SendOfferTopWidget({super.key, required this.username, required this.email,});
+  final String receiverID;
+  final String bio;
+  const SendOfferTopWidget({
+    super.key,
+    required this.username,
+    required this.email,
+    required this.receiverID,
+    required this.bio,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +30,16 @@ class SendOfferTopWidget extends StatelessWidget {
           padding: AppPaddings.all12,
           child: Column(
             children: <Widget>[
-               SendOfferProfilePhotoWidget(username: username,email: email,),
+              SendOfferProfilePhotoWidget(
+                username: username,
+                email: email,
+              ),
               AppSizedBox.h10,
-              const SendOfferButtonWidget(),
+              SendOfferButtonWidget(
+                bio: bio,
+                username: username,
+                receiverID: receiverID,
+              ),
             ],
           ),
         ),

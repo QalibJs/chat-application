@@ -1,4 +1,3 @@
-import '../widgets/offer_success_state.dart';
 import '../../../theme/theme.dart';
 import 'package:flutter/material.dart';
 import '../widgets/offer_app_bar_widget.dart';
@@ -21,7 +20,7 @@ class OfferScreen extends StatelessWidget {
           actions: const [
             OfferInfoButton(),
           ],
-        ),
-        body: const OfferBlocBuilderWidget());
+        ));
+        // body: const OfferBlocBuilderWidget());
   }
 }

@@ -173,11 +173,11 @@ class Helper {
               ),
               AppSizedBox.h40,
               Padding(
-                padding: AppPaddings.all6,
+                padding: AppPaddings.lr12,
                 child: Text(
                   AppTexts.offerInfo,
                   style:
-                      AppTextStyle.blackMiddleText(AppColors.backgroundColor),
+                      AppTextStyle.blackMiddleText(context),
                 ),
               ),
             ],

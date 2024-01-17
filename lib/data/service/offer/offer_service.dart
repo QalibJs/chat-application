@@ -1,4 +1,4 @@
-import '../../../data/model/offer/offer_model.dart';
+import '../../model/offer/offer_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

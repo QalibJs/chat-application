@@ -36,11 +36,17 @@ class DiscoverListViewWidget extends StatelessWidget {
               if (chatDatas.uid == auth.currentUser!.uid) {
                 AppNavigator.go(const ProfileScreen(), context);
               } else {
+                final currentUser = user.firstWhere(
+                  (user) => user.uid == auth.currentUser!.uid,
+                );
                 AppNavigator.go(
                   SendOfferScreen(
-                    username: chatDatas.username!,
+                    receiverUsername: chatDatas.username!,
+                    receiverBio: chatDatas.bio!,
+                    senderBio: currentUser.bio!,
+                    receiverID: chatDatas.uid!,
+                    senderUsername: currentUser.username!,
                     email: chatDatas.email!,
-                    bio: chatDatas.bio!,
                   ),
                   context,
                 );

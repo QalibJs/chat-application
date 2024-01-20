@@ -1,4 +1,3 @@
-import 'package:chat_app/locator/locator.dart';
 import 'package:flutter/material.dart';
 
 import '../../model/offer/offer_model.dart';
@@ -8,7 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class OfferService {
   FirebaseFirestore db = FirebaseFirestore.instance;
   final Timestamp timestamp = Timestamp.now();
-  final TextEditingController controller = locator.get<TextEditingController>();
+  final TextEditingController controller = TextEditingController();
 
   Future<void> sendOffer(String bio, String username, String receiverId) async {
     FirebaseAuth auth = FirebaseAuth.instance;
@@ -19,7 +18,7 @@ class OfferService {
       email: auth.currentUser!.email!,
       bio: bio,
       timestamp: timestamp,
-      // note: controller.text
+      // note: controller.te
     );
 
     List<String> ids = [auth.currentUser!.uid, receiverId];

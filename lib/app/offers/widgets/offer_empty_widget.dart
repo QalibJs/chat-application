@@ -10,7 +10,7 @@ class OfferEmptyWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Icon(Icons.error , color: AppColors.white,),
-        Text("You have a error")
+        // Text("You have a error")
       ],
     );
   }

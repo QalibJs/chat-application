@@ -1,12 +1,13 @@
 import 'dart:io';
 
+import 'package:chat_app/locator/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 
 class EditCubit extends Cubit<int> {
   EditCubit() : super(0);
-  TextEditingController bioController = TextEditingController();
+  TextEditingController bioController = locator.get<TextEditingController>();
 
   File? image;
 

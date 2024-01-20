@@ -1,9 +1,6 @@
 import 'package:chat_app/app/discover/screen/send%20offer/send_offer_screen.dart';
-
-import '../../../../controllers/cubit/offer/offer_cubit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../constants/app_navigators.dart';
 import '../../../../constants/app_texts.dart';
 import '../../../../data/model/home/home_model.dart';
@@ -22,7 +19,6 @@ class DiscoverListViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FirebaseAuth auth = FirebaseAuth.instance;
-    OfferCubit offerCubit = context.watch<OfferCubit>();
     return Container(
       color: Theme.of(context).colorScheme.background,
       height: MediaQuery.of(context).size.height,
@@ -32,10 +28,10 @@ class DiscoverListViewWidget extends StatelessWidget {
           final chatDatas = user[index];
           return DiscoverListTileWidget(
             onTap: () {
-              offerCubit.getOfferItems(state.usersModel[index].uid!);
               if (chatDatas.uid == auth.currentUser!.uid) {
                 AppNavigator.go(const ProfileScreen(), context);
               } else {
+
                 final currentUser = user.firstWhere(
                   (user) => user.uid == auth.currentUser!.uid,
                 );

@@ -1,3 +1,4 @@
+import 'package:chat_app/locator/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -6,14 +7,14 @@ import '../../../data/service/hive/hive_service.dart';
 class AuthCubit extends Cubit<int> {
   AuthCubit() : super(0);
 
-  TextEditingController registerEmail = TextEditingController();
-  TextEditingController usernameController = TextEditingController();
-  TextEditingController registerPassword = TextEditingController();
-  TextEditingController loginPassword = TextEditingController();
-  TextEditingController registerPasswordA = TextEditingController();
-  TextEditingController loginEmail = TextEditingController();
-  TextEditingController bioController = TextEditingController();
-  TextEditingController resetController = TextEditingController();
+  TextEditingController registerEmail = locator.get<TextEditingController>();
+  TextEditingController usernameController = locator.get<TextEditingController>();
+  TextEditingController registerPassword = locator.get<TextEditingController>();
+  TextEditingController loginPassword = locator.get<TextEditingController>();
+  TextEditingController registerPasswordA = locator.get<TextEditingController>();
+  TextEditingController loginEmail = locator.get<TextEditingController>();
+  TextEditingController bioController = locator.get<TextEditingController>();
+  TextEditingController resetController = locator.get<TextEditingController>();
   PageController registerInputController = PageController();
   GlobalKey<FormState> globalKey = GlobalKey<FormState>();
   GlobalKey<FormState> globalKey2 = GlobalKey<FormState>();

@@ -9,9 +9,9 @@ import '../../../controllers/cubit/home/home_cubit.dart';
 import '../../../controllers/cubit/home/home_state.dart';
 import '../../../data/service/chat/chat_service.dart';
 
-class ChatMessageListWidget extends StatelessWidget {
+class ChatMessageBodyWidget extends StatelessWidget {
   final int index;
-  const ChatMessageListWidget({super.key, required this.index});
+  const ChatMessageBodyWidget({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {

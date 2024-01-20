@@ -5,7 +5,7 @@ import '../../../controllers/cubit/main/main_cubit.dart';
 import '../../../global/widgets/global_nav_bar.dart';
 import '../../discover/screen/discover/discover_screen.dart';
 import '../../home/screens/home_screen.dart';
-import '../../offers/screen/offer_sreen.dart';
+import '../../offers/screen/offer_screen.dart';
 import '../../profile/screens/profile_screen.dart';
 
 class MainPage extends StatelessWidget {

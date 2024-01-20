@@ -7,7 +7,7 @@ import '../../../controllers/cubit/home/home_cubit.dart';
 import '../../../controllers/cubit/home/home_state.dart';
 import '../../../global/widgets/global_error_widget.dart';
 import '../widgets/chat_app_bar_title.dart';
-import '../widgets/chat_message_list_widget.dart';
+import '../widgets/chat_message_body_widget.dart';
 
 class ChatScreen extends StatelessWidget {
   final int index;
@@ -43,7 +43,7 @@ class ChatScreen extends StatelessWidget {
           },
         ),
       ),
-      body: ChatMessageListWidget(index: index),
+      body: ChatMessageBodyWidget(index: index),
       // bottomNavigationBar:
     );
   }

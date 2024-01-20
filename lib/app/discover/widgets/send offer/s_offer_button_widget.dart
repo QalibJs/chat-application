@@ -11,11 +11,12 @@ class SendOfferButtonWidget extends StatelessWidget {
 
   final String receiverID;
 
-  const SendOfferButtonWidget(
-      {super.key,
-      required this.bio,
-      required this.username,
-      required this.receiverID});
+  const SendOfferButtonWidget({
+    super.key,
+    required this.bio,
+    required this.username,
+    required this.receiverID,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,11 @@ class SendOfferButtonWidget extends StatelessWidget {
         text: AppTexts.sendOffer,
         color: AppColors.backgroundColor,
         onPressed: () {
-          offerService.sendOffer(bio, username, receiverID);
+          offerService.sendOffer(
+            bio,
+            username,
+            receiverID,
+          );
         },
       ),
     );

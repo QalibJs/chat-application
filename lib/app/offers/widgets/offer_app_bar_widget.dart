@@ -10,7 +10,7 @@ class OfferAppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       AppTexts.offers,
-      style: AppTextStyle.blackBigText,
+      style: AppTextStyle.appBar(context),
     );
   }
 }

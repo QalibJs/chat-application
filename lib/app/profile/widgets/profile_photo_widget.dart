@@ -9,8 +9,8 @@ class ProfilePhotoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 12.h,
-      height: 12.h,
+      width: 22.w,
+      height: 22.w,
       decoration: AppBoxDecorations.sOfferPP(exColor(context)),
       child: Center(
         child: Icon(

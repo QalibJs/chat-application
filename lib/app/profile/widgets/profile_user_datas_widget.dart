@@ -20,7 +20,7 @@ class ProfileUserDatasWidget extends StatelessWidget {
     FirebaseAuth auth = FirebaseAuth.instance;
 
     return Padding(
-      padding: AppPaddings.all12,
+      padding: AppPaddings.all12.copyWith(right: 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -37,7 +37,7 @@ class ProfileUserDatasWidget extends StatelessWidget {
                 return const CircularProgressIndicator();
               } else if (state is HomeSuccessState) {
                 return SizedBox(
-                  width: context.width -(68 + 12.h),
+                  width: context.width -(108 + 22.w),
                   height: 30,
                   child: ListView.builder(
                     itemCount: 1,

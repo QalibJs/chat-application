@@ -25,12 +25,12 @@ ThemeData darkMode = ThemeData(
   ),
 );
 
-Color exColor(context) =>
+Color exColor(BuildContext context) =>
     Theme.of(context).colorScheme.background == AppColors.black
         ? AppColors.white
         : AppColors.black;
 
-Color smoothColor(context) =>
+Color smoothColor(BuildContext context) =>
     Theme.of(context).colorScheme.background == AppColors.black
         ? AppColors.simpleGrey
         : AppColors.white;

@@ -5,17 +5,17 @@ import 'package:flutter/material.dart';
 class OfferListViewWidget extends StatelessWidget {
   final AsyncSnapshot<QuerySnapshot<Object?>> snapshot;
 
-  const OfferListViewWidget({ super.key, required this.snapshot });
+  const OfferListViewWidget({super.key, required this.snapshot});
 
-   @override
-   Widget build(BuildContext context) {
-       return ListView(
-      physics:  const BouncingScrollPhysics(),
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      physics: const BouncingScrollPhysics(),
       children: snapshot.data!.docs
           .map(
-            (document) =>  OfferItemWidget(
+            (document) => OfferItemWidget(
               document: document,
-            )
+            ),
           )
           .toList(),
     );

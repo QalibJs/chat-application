@@ -2,6 +2,8 @@ class AppTexts {
   AppTexts._();
 
   static String search = 'Axtar...';
+  static String acceptedOffer = "Təklif qəbul edildi, artıq danışmağa başlaya biərsiniz";
+  static String ignoredOffer = "Təklif rədd edildi";
   static String appName = 'Mandalin Chat';
   static String about = 'Haqqında';
   static String homeError =

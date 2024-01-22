@@ -7,10 +7,11 @@ import 'app_colors.dart';
 class AppTextStyle {
   AppTextStyle._();
 
-  static whiteSmallText(context) => TextStyle(color: exColor(context));
+  static whiteSmallText(BuildContext context) =>
+      TextStyle(color: exColor(context));
   static get whiteSoSmallText =>
       TextStyle(color: AppColors.white, fontSize: 11.sp);
-  static whiteMiddleText(color) => TextStyle(
+  static whiteMiddleText(Color color) => TextStyle(
         color: color,
         fontSize: 12.5.sp,
         fontWeight: FontWeight.w500,
@@ -20,12 +21,12 @@ class AppTextStyle {
         fontSize: 15.sp,
         fontWeight: FontWeight.w500,
       );
-  static profile(color) => TextStyle(
+  static profile(Color color) => TextStyle(
         color: color,
         fontSize: 12.5.sp,
         fontWeight: FontWeight.w500,
       );
-  static buttonTextStyle(context) => TextStyle(
+  static buttonTextStyle(BuildContext context) => TextStyle(
         color: Theme.of(context).colorScheme.background,
         fontSize: 11.5.sp,
         fontWeight: FontWeight.w500,
@@ -36,7 +37,7 @@ class AppTextStyle {
         fontWeight: FontWeight.w500,
       );
 
-  static blackSmallText(context) => TextStyle(
+  static blackSmallText(BuildContext context) => TextStyle(
         color: exColor(context),
         fontSize: 12.sp,
         fontWeight: FontWeight.w600,
@@ -68,12 +69,12 @@ class AppTextStyle {
         fontWeight: FontWeight.w500,
       );
 
-  static blackMiddleText(context) => TextStyle(
+  static blackMiddleText(BuildContext context) => TextStyle(
         color: exColor(context),
         fontSize: 12.5.sp,
         fontWeight: FontWeight.w500,
       );
-  static profilDatas(context) => TextStyle(
+  static profilDatas(BuildContext context) => TextStyle(
         color: Theme.of(context).colorScheme.background == AppColors.black
             ? AppColors.green
             : AppColors.darkGreen,
@@ -87,7 +88,7 @@ class AppTextStyle {
         fontWeight: FontWeight.w500,
       );
 
-  static chatPrimaryText(context) => TextStyle(
+  static chatPrimaryText(BuildContext context) => TextStyle(
         color: Theme.of(context).colorScheme.background == AppColors.black
             ? AppColors.white
             : AppColors.black,
@@ -101,7 +102,7 @@ class AppTextStyle {
         fontWeight: FontWeight.w400,
       );
 
-  static blackHardText(context) => TextStyle(
+  static blackHardText(BuildContext context) => TextStyle(
         color: exColor(context),
         fontSize: 12.sp,
         fontWeight: FontWeight.w900,
@@ -113,7 +114,7 @@ class AppTextStyle {
         fontWeight: FontWeight.w600,
       );
 
-  static chatHeaderText(context) => TextStyle(
+  static chatHeaderText(BuildContext context) => TextStyle(
         color: Theme.of(context).colorScheme.background == AppColors.black
             ? AppColors.white
             : AppColors.black,

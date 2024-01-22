@@ -18,10 +18,10 @@ class OfferBodyWidget extends StatelessWidget {
         if (snapshot.hasData) {
           return OfferSnapshotHasDataWidget(snapshot: snapshot); // teklifler gorunecek burda
         }
-        if (snapshot.hasError) {
+        else if (snapshot.hasError) {
           return const GlobalErrorWidget(); //error
         }
-        if (snapshot.connectionState == ConnectionState.waiting) {
+        else if (snapshot.connectionState == ConnectionState.waiting) {
           return const GlobalLoadingWidget();
         }
         return const SizedBox.shrink();

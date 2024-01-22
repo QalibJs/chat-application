@@ -1,3 +1,4 @@
+import 'package:chat_app/app/profile/widgets/profile_edit_icon.dart';
 import 'package:chat_app/app/profile/widgets/profile_photo_widget.dart';
 import 'package:chat_app/app/profile/widgets/profile_user_datas_widget.dart';
 import 'package:chat_app/constants/app_paddings.dart';
@@ -6,8 +7,7 @@ import 'package:flutter/material.dart';
 import '../../../constants/app_sized_box.dart';
 
 class ProfileTopWidget extends StatelessWidget {
-  final bool isProfile;
-  const ProfileTopWidget({super.key, required this.isProfile});
+  const ProfileTopWidget({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +22,11 @@ class ProfileTopWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                 const ProfilePhotoWidget(),
+                  const ProfilePhotoWidget(),
                   AppSizedBox.w10,
-                  isProfile
-                      ? const ProfileUserDatasWidget()
-                      : const SizedBox.shrink(),
+                  const ProfileUserDatasWidget(),
+                  const Spacer(),
+                  const ProfileEditIcon(),
                 ],
               ),
             ],

@@ -36,7 +36,7 @@ class GlobalSnackBar {
     );
   }
 
-  static void showSuccessSnackkbar(context, message) {
+  static void showSuccessSnackkbar(context, String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         behavior: SnackBarBehavior.floating,
